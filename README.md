@@ -8,6 +8,12 @@ Derivation
 
 ![](https://github.com/drbitboy/PLC_horizontal_drum_CSA/raw/main/derivation.jpg)
 
+RSLogix 5000 V16 implementation in segment_csa.ACD
+====
+
+
+![](https://github.com/drbitboy/PLC_horizontal_drum_CSA/raw/main/segment_csa_acd.png)
+
 Performance
 ====
 
