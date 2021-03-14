@@ -7,3 +7,10 @@ Derivation
 ====
 
 ![](https://github.com/drbitboy/PLC_horizontal_drum_CSA/raw/main/derivation.jpg)
+
+Performance
+====
+
+Convergence is linear:  see plot below; abscissa is log 2**N (iteration), i.e linear with N
+
+![](https://github.com/drbitboy/PLC_horizontal_drum_CSA/raw/main/segment_plot.png)
