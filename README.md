@@ -12,17 +12,21 @@ RSLogix 5000 V16 implementation in segment_csa.ACD
 ====
 
 Parameters:
+
     R - Radius of drum, arbitrary length units
 
 Inputs:
+
     L0 - Level of liquid in drum, distance below half-full/-empty; -R is full; +R is empty
 
 Outputs:
+
     Area - Calculated volume below L0 at end of scan
          - Initialized to 0 at the start of the scan
          - Incremented on each iteration of Rung 1 loop
 
 Intermediate tags:
+
     L - Iteration parameter
       - Initialized to L0 at the start of the scan
       - Modified on each iteration of Rung 1 loop
