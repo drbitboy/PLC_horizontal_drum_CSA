@@ -11,6 +11,27 @@ Derivation
 RSLogix 5000 V16 implementation in segment_csa.ACD
 ====
 
+Parameters:
+    R - Radius of drum, arbitrary length units
+
+Inputs:
+    L0 - Level of liquid in drum, distance below half-full/-empty; -R is full; +R is empty
+
+Outputs:
+    Area - Calculated volume below L0 at end of scan
+         - Initialized to 0 at the start of the scan
+         - Incremented on each iteration of Rung 1 loop
+
+Intermediate tags:
+    L - Iteration parameter
+      - Initialized to L0 at the start of the scan
+      - Modified on each iteration of Rung 1 loop
+
+    tttN - Proxy for iteration counter
+         - 2**N i.e. "*t*wo-*t*o-*t*he-*N* power
+         - Initialized to 1 at the start of the scan
+         - Doubled at the end of each scan
+         - Loop exits when 2**N = 1,048,576 = 2**20, so algorithm is limited to 20 iterations
 
 ![](https://github.com/drbitboy/PLC_horizontal_drum_CSA/raw/main/segment_csa_acd.png)
 
